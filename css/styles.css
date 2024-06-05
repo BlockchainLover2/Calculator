@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #232a35;
+}
+
+*{
+    font-size: 24px;
+    font-family: "Times New Roman", serif;
+    color: white;
+
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    caret-color: transparent;
+}
+
+.current{
+    font-size: 64px;
+    flex: 1;
+}
+
+
+.previous{
+    opacity: 0.5;
+    font-size: 32px;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.number{
+    background-color: #363b4c;
+}
+
+.result{
+    flex: 1
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 700px;
+    border: solid #1a202d 6px;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #1a202d;
+
+}
+
+.equal{
+    background-color: #4cc2ff;
+    color: black;
+}
+
+.action-container{
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+button{
+    caret-color: transparent;
+    width: 120px;
+    flex: auto;
+    border-radius: 4px;
+    background-color: #2d3241;
+    border: #2d3241;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mouseOn.number{
+    background-color: #2d3241;
+}
+.mouseOn{
+    background-color: #363b4c;
+}
+.mouseClick.mouseOn{
+    background-color: #2d3241;
+}
+.mouseClick.mouseOn.number{
+    background-color: #1a202d;
+
+}
